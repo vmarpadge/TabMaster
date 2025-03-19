@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TabMaster</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-layer-group"></i> TabMaster</h1>
+      <div class="tab-stats">
+        <span id="tab-count">0</span> tabs open
+      </div>
+    </header>
+    
+    <div class="actions">
+      <button id="group-tabs"><i class="fas fa-object-group"></i> Smart Group</button>
+      <button id="ungroup-tabs"><i class="fas fa-object-ungroup"></i> Ungroup</button>
+      <button id="suspend-tabs"><i class="fas fa-pause-circle"></i> Suspend</button>
+      <button id="save-session"><i class="fas fa-save"></i> Save Session</button>
+      <button id="clean-duplicates"><i class="fas fa-broom"></i> Remove Dupes</button>
+      <button id="open-settings"><i class="fas fa-cog"></i> Settings</button>
+    </div>
+    
+    <div class="search-container">
+      <input type="text" id="search-tabs" placeholder="Search tabs...">
+    </div>
+    
+    <div class="tabs-container">
+      <ul id="tabs-list"></ul>
+    </div>
+    
+    <div class="footer">
+      Created with <i class="fas fa-heart" style="color: #ff9900;"></i> by Vineethkumar Marpadge
+    </div>
+  </div>
+  
+  <div class="loading" id="loading-indicator">
+    <div class="spinner"></div>
+    <div class="loading-text">Processing tabs...</div>
+  </div>
+  
+  <script src="popup.js" defer></script>
+</body>
+</html>
